@@ -1,0 +1,29 @@
+3 apis
+
+1 api: get
+/v1/getmyvehicle?type="car"
+=>create a car and return back
+
+types: car, bus, bike
+ex. for "car" => {name: BMW, type: Car, Model:2020}
+
+2 api: post
+/v1/postmyvehicle
+body: 
+{
+    name:""
+    type:""
+    model:""
+}
+create obj and return back
+
+3 api: post
+/v1/canDrive
+{
+      name:
+      type:
+      model:
+}
+
+if bus => false
+else => true
