@@ -12,6 +12,7 @@ func main() {
 	router.Route("/v1", func(r chi.Router) {
 		r.Get("/getmyvehicle", rest.GetMyVehicle)
 		r.Post("/postmyvehicle", rest.PostMyVehicle)
+		r.Post("/canDrive", rest.CanDrive)
 	})
 	http.ListenAndServe(":8080", router)
 }
