@@ -25,8 +25,6 @@ func CanDrive(rw http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	typeOfVeh := objmap["type"].(string)
-
 	var vehicle entity.Vehicle
 
 	typeOfVeh, ok := objmap["type"].(string)
